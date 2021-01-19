@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Authorisation Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Coding Society <span>BITD</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="auth.html">LogIn</a></li>
+					<li><a href="auth.html">SignUp</a></li>
+					<li><a href="blog.html">BLOGS</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>Authoriasation Page</p>
+						<h2>LogIn</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							
+							
+							
+							
+							
+								<div id="login_div" class="align-center">
+								<h3>Member Login</h3>
+								<input type="email" placeholder="Enter E-mail" id="email_field" /><br/>
+								<input type="password" placeholder="Enter Password" id="password_field" /><br/>
+
+								<button onclick="login()">LogIn</button>
+							  </div>
+
+								
+							  <div id="user_div" class="align-center">
+								<h3>Welcome User</h3>
+								<p id="user_para">You're currently hopped in.</p>
+								<button onclick="logout()" >Logout</button>
+								
+							  </div>
+
+
+
+							  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+							  <script>
+								// Initialize Firebase
+								var config = {
+								  apiKey: "AIzaSyBSDx-N8hjOHkm2NqIS-BbiM-i3rqM3syc",
+								authDomain: "csoc-bitd.firebaseapp.com",
+								databaseURL: "https://csoc-bitd-default-rtdb.firebaseio.com",
+								projectId: "csoc-bitd",
+								storageBucket: "csoc-bitd.appspot.com",
+								messagingSenderId: "923187982655"
+								};
+								firebase.initializeApp(config);
+							  </script>
+							  <script src="index.js"></script>
+  
+  
+  
+							
+							
+							
+							</div>
+					</div>
+				</div>
+			</section>
+			
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
