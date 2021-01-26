@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>Page Title</title>
+<body>
+
+<h1>Hurrah!! Signed In Successfully!</h1>
+<p>Just one step away...</p>
+<p>Please verify your E-Mail.</p>
+<p>current email: </p>
+<button id="verify_btn" onclick="sendEmailVerification()">Send Verification</button>
+<p id=emaillink > </p>
+
+<button type="button" onclick="signOut()">Sign Out<small></small></button>
+
+
+   
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+<script src="hta.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBSDx-N8hjOHkm2NqIS-BbiM-i3rqM3syc",
+	authDomain: "csoc-bitd.firebaseapp.com",
+	databaseURL: "https://csoc-bitd-default-rtdb.firebaseio.com",
+	projectId: "csoc-bitd",
+	storageBucket: "csoc-bitd.appspot.com",
+	messagingSenderId: "923187982655"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+    <script src="mailnv.js"></script>
+
+</body>
+</html>
